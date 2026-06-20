@@ -29,7 +29,7 @@ cargo build --release
 ## Быстрый старт
 
 ```bash
-git clone <repo-url> ~/jsonscript
+git clone https://github.com/Sp0nge-bob/middlewarejson-rust.git ~/jsonscript
 cd ~/jsonscript
 
 rustup default stable

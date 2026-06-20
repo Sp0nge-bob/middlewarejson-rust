@@ -16,7 +16,7 @@ rustc --version           # после установки rustup
 ## 1. Установка
 
 ```bash
-git clone <repo-url> ~/jsonscript
+git clone https://github.com/Sp0nge-bob/middlewarejson-rust.git ~/jsonscript
 cd ~/jsonscript
 
 # Установите Rust: https://rustup.rs
