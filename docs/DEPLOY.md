@@ -16,8 +16,9 @@ rustc --version           # после установки rustup
 ## 1. Установка
 
 ```bash
-git clone https://github.com/Sp0nge-bob/middlewarejson-rust.git ~/jsonscript
-cd ~/jsonscript
+sudo mkdir -p /opt
+sudo git clone https://github.com/Sp0nge-bob/middlewarejson-rust.git /opt/middlewarejson
+cd /opt/middlewarejson
 
 # Установите Rust: https://rustup.rs
 rustup default stable
@@ -90,8 +91,8 @@ location <AGENT_JSON_PATH>/ {
 ## 4. Обновление
 
 ```bash
-export APP_DIR=~/jsonscript
 ./deploy/update.sh
+# или: export APP_DIR=/path/to/project && ./deploy/update.sh
 ```
 
 Скрипт выполняет `git pull`, `cargo build --release` и перезапуск systemd.

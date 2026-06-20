@@ -17,7 +17,7 @@ Drop-in замена Python-версии: совместим с `data/middleware
 Release-сборку выполняйте **на VPS**, рядом с 3x-ui:
 
 ```bash
-cd ~/jsonscript
+cd /opt/middlewarejson   # каталог клонирования — см. «Быстрый старт»
 cargo build --release
 ```
 
@@ -29,8 +29,9 @@ cargo build --release
 ## Быстрый старт
 
 ```bash
-git clone https://github.com/Sp0nge-bob/middlewarejson-rust.git ~/jsonscript
-cd ~/jsonscript
+sudo mkdir -p /opt
+sudo git clone https://github.com/Sp0nge-bob/middlewarejson-rust.git /opt/middlewarejson
+cd /opt/middlewarejson
 
 rustup default stable
 cp .env.example .env
