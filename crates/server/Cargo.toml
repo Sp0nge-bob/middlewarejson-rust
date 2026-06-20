@@ -1,0 +1,22 @@
+[package]
+name = "middlewarejson-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "middlewarejson"
+path = "src/main.rs"
+
+[dependencies]
+middlewarejson-core = { workspace = true }
+axum = { workspace = true }
+tokio = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+dotenvy = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }

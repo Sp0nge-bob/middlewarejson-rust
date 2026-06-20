@@ -1,0 +1,25 @@
+[package]
+name = "middlewarejson-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "middlewarejson-cli"
+path = "src/main.rs"
+
+[dependencies]
+middlewarejson-core = { workspace = true }
+clap = { workspace = true }
+dialoguer = { workspace = true }
+console = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+dotenvy = { workspace = true }
+anyhow = { workspace = true }
+comfy-table = { workspace = true }
+regex = { workspace = true }
+serde_json = { workspace = true }
+reqwest = { workspace = true, features = ["blocking", "rustls-tls"] }

@@ -1,0 +1,17 @@
+# Example systemd unit for middlewarejson (Rust).
+# Prefer CLI-generated unit: middlewarejson-cli service install
+
+[Unit]
+Description=middlewarejson — 3x-ui JSON subscription proxy
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/middlewarejson
+EnvironmentFile=/opt/middlewarejson/.env
+ExecStart=/opt/middlewarejson/target/release/middlewarejson
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
